@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextRise Web Agency | Websites That Convert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --neon-green: #76FF39;
+        --electric-green: #39FF14;
+        --lime-accent: #CCFF00;
+        --pitch-black: #0D0F12;
+        --dark-grey: #1A1A1A;
+        
+        /* Refined Proportions */
+        --text-hero: 56px;
+        --text-section: 36px;
+        --text-card-title: 18px;
+        --text-body: 15px;
+        --text-sm: 13px;
+        --text-xs: 11px;
+      }
+      body {
+        background-color: #0D0F12;
+        color: #FFFFFF;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: var(--text-body);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      .font-monument {
+        font-family: 'Archivo Black', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      .green-glow {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+      }
+      .green-glow-hover:hover {
+        box-shadow: 0 0 35px rgba(0, 255, 0, 0.6);
+      }
+      .grid-background {
+        background-image: 
+          linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+          linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+      }
+      .animate-marquee {
+        animation: marquee 80s linear infinite;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .fade-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1a1a1a;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #333;
+      }
+      
+      /* Global Spacing Reductions */
+      section {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      @media (max-width: 768px) {
+        section {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

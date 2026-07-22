@@ -1,0 +1,122 @@
+/* Global styles */
+
+:root {
+  --neon-lime: #76FF39;
+  --pure-white: #FFFFFF;
+  --silver-gray: #B0B8C1;
+  --charcoal-gunmetal: #2A2E35;
+  --eerie-black: #0D0F12;
+}
+
+body {
+  background-color: #0D0F12 !important;
+}
+
+/* COMPONENT 1 — NAV UNDERLINE GLOW */
+.nav-glow-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #76FF39 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.nav-glow-bloom {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background: linear-gradient(90deg, transparent 0%, rgba(118, 255, 57, 0.18) 50%, transparent 100%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+/* COMPONENT 2 — ARC / MOUND DIVIDER */
+.arc-glow-divider {
+  width: 100%;
+  height: 180px;
+  background: radial-gradient(
+    ellipse 700px 320px at 50% 100%,
+    rgba(118, 255, 57, 0.35) 0%,
+    rgba(118, 255, 57, 0.12) 40%,
+    transparent 72%
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .arc-glow-divider {
+    height: 140px;
+    background: radial-gradient(
+      ellipse 90vw 200px at 50% 100%,
+      rgba(118, 255, 57, 0.35) 0%,
+      rgba(118, 255, 57, 0.12) 40%,
+      transparent 72%
+    );
+  }
+}
+
+/* COMPONENT 3 — RADIAL-GLOW CTA CONTAINER */
+.cta-glow-box {
+  position: relative;
+  width: 100%;
+  border-radius: 28px;
+  background-color: #2A2E35; /* Charcoal / Gunmetal base */
+  overflow: hidden;
+  padding: 80px 40px;
+  border: 1px solid rgba(118, 255, 57, 0.1);
+}
+
+@media (max-width: 768px) {
+  .cta-glow-box {
+    padding: 60px 24px;
+    border-radius: 20px;
+  }
+}
+
+.cta-glow-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 900px 500px at 25% 0%,
+    rgba(118, 255, 57, 0.40) 0%,
+    rgba(118, 255, 57, 0.10) 45%,
+    transparent 75%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Button Glow */
+.btn-glow {
+  background-color: #76FF39 !important;
+  color: #0D0F12 !important;
+  box-shadow: 0 0 20px rgba(118, 255, 57, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(118, 255, 57, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.03);
+}
+
+/* Spinner Loader */
+.loader {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(118, 255, 57, 0.1);
+  border-radius: 50%;
+  border-top-color: #76FF39;
+  animation: spin 1s ease-in-out infinite;
+  box-shadow: 0 0 15px rgba(118, 255, 57, 0.4);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
