@@ -1,5 +1,8 @@
 {
   "name": "Remix: NextRise Web Agency",
   "description": "A high-converting, elite website build for NextRise Web Agency, designed as a conversion-optimized client-booking machine.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

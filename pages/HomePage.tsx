@@ -11,7 +11,7 @@ import LogoCarousel from '../components/LogoCarousel';
 import ServicesSection from '../components/ServicesSection';
 import FAQSection from '../components/FAQSection';
 import FinalCTA from '../components/FinalCTA';
-import { SectionDivider } from '../components/SectionDividers';
+import { SectionDivider, SolutionCurvedDivider } from '../components/SectionDividers';
 import { WorthItTransition } from '../components/WorthItTransition';
 
 import Logo from '../components/Logo';
@@ -47,25 +47,25 @@ const HomePage: React.FC = () => {
           <Hero onOpenForm={handleOpenForm} />
         </section>
         
-        <WorthItTransition label="the challenge" />
+        <WorthItTransition title="The Challenge" subtitle="Problem Awareness" />
         
         <section id="problem">
           <ProblemAwareness />
         </section>
         
-        <SectionDivider label="the solution" />
+        <SolutionCurvedDivider label="the solution" />
         
         <section id="solution">
           <SolutionSection onOpenForm={handleOpenForm} />
         </section>
         
-        <SectionDivider label="our process" />
+        <WorthItTransition title="Our Process" subtitle="Execution Roadmap" />
         
         <section id="process">
           <ProcessSection />
         </section>
 
-        <SectionDivider label="reviews" />
+        <SolutionCurvedDivider label="reviews" />
 
         <section id="testimonials">
           <TestimonialCards onOpenForm={handleOpenForm} />
@@ -83,7 +83,7 @@ const HomePage: React.FC = () => {
           <ServicesSection />
         </section>
         
-        <WorthItTransition label="faq" />
+        <WorthItTransition />
         
         <section id="faq">
           <FAQSection />

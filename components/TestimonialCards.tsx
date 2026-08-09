@@ -60,7 +60,7 @@ const StarRating = () => (
 
 const TestimonialCards: React.FC<{ onOpenForm: () => void }> = ({ onOpenForm }) => {
   return (
-    <div className="py-24 bg-transparent px-6">
+    <div className="pb-24 pt-6 bg-transparent px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-up">
           <h2 className="font-monument text-2xl md:text-[36px] mb-4 tracking-tight uppercase">What Our Clients Say</h2>

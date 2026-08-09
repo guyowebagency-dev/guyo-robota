@@ -10,7 +10,7 @@ const StatBox: React.FC<{ value: string; label: string }> = ({ value, label }) =
 
 const ProblemAwareness: React.FC = () => {
   return (
-    <div className="py-20 px-6">
+    <div className="pb-20 pt-6 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="fade-up">
           <h2 className="font-monument text-2xl md:text-[36px] mb-5 leading-[1.2] tracking-tight">
