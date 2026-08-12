@@ -187,8 +187,7 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
           setIsLoaded(true)
         }
       })
-      .catch((err) => {
-        console.warn('Spline scene unavailable, rendering interactive fallback canvas:', err.message)
+      .catch(() => {
         if (isMounted) {
           setHasError(true)
         }

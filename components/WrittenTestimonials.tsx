@@ -16,7 +16,7 @@ const WrittenTestimonials: React.FC = () => {
         {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
           <div key={i} className="flex items-center gap-4 px-10 group">
             <span className="text-[#00FF00] font-monument text-xl opacity-40">"</span>
-            <span className="font-monument text-lg md:text-[18px] text-zinc-300 group-hover:text-white transition-colors uppercase tracking-tight font-bold">
+            <span className="font-sans text-[15px] sm:text-[16px] text-zinc-300 group-hover:text-white transition-colors tracking-tight font-bold">
               {t.quote}
             </span>
             <span className="font-mono text-zinc-600 text-[13px]">— {t.name}</span>

@@ -60,30 +60,38 @@ const StarRating = () => (
 
 const TestimonialCards: React.FC<{ onOpenForm: () => void }> = ({ onOpenForm }) => {
   return (
-    <div className="pb-24 pt-6 bg-transparent px-6">
+    <div className="py-16 sm:py-20 md:py-24 bg-transparent px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 fade-up">
-          <h2 className="font-monument text-2xl md:text-[36px] mb-4 tracking-tight uppercase">What Our Clients Say</h2>
-          <p className="text-zinc-500 text-base md:text-[16px] max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center mb-12 sm:mb-16 fade-up">
+          {/* Eyebrow Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/[0.04] border border-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-md mb-3 sm:mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00FF00] animate-pulse" />
+            <span className="text-[#00FF00] font-mono text-[12px] font-semibold tracking-[0.15em] uppercase">TESTIMONIALS</span>
+          </div>
+
+          <h2 className="font-sans font-bold text-[24px] sm:text-[28px] md:text-[34px] lg:text-[38px] mb-4 leading-[1.1] tracking-[-0.015em] text-white">
+            What Our <span className="text-[#00FF00]">Clients Say</span>
+          </h2>
+          <p className="font-sans font-normal text-[15px] sm:text-[16px] text-white/65 max-w-[560px] mx-auto leading-[1.5]">
             Real feedback from industry leaders who transformed their digital presence with NextRise.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="fade-up bg-zinc-900/50 border border-white/5 p-8 rounded-2xl hover:border-[#00FF00]/20 transition-all duration-500 hover:bg-zinc-900 group flex flex-col h-full"
+              className="fade-up bg-zinc-900/60 border border-white/5 p-5 sm:p-6 rounded-2xl hover:border-[#00FF00]/20 transition-all duration-500 hover:bg-zinc-900 group flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <StarRating />
               
-              <p className="text-zinc-300 text-[15px] leading-relaxed mb-8 italic">
+              <p className="text-white/70 text-[13px] sm:text-[14px] leading-[1.5] mb-6 italic font-normal">
                 "{testimonial.quote}"
               </p>
               
-              <div className="flex items-center gap-4 mt-auto">
-                <div className="w-12 h-12 rounded-full overflow-hidden border border-white/10 group-hover:border-[#00FF00]/30 transition-colors">
+              <div className="flex items-center gap-3.5 mt-auto pt-2">
+                <div className="w-10 h-10 rounded-full overflow-hidden border border-white/10 group-hover:border-[#00FF00]/30 transition-colors flex-shrink-0">
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.name} 
@@ -92,10 +100,10 @@ const TestimonialCards: React.FC<{ onOpenForm: () => void }> = ({ onOpenForm }) 
                   />
                 </div>
                 <div>
-                  <div className="font-monument text-[14px] font-bold text-white tracking-tight">
+                  <div className="font-sans text-[14px] sm:text-[15px] font-bold text-white tracking-tight">
                     {testimonial.name}
                   </div>
-                  <div className="text-[#00FF00] font-mono text-[11px] uppercase tracking-wider mt-1 opacity-70 whitespace-pre-line">
+                  <div className="text-white/50 font-sans text-[12px] sm:text-[13px] font-normal mt-0.5 whitespace-pre-line leading-tight">
                     {testimonial.title}
                   </div>
                 </div>
@@ -104,12 +112,12 @@ const TestimonialCards: React.FC<{ onOpenForm: () => void }> = ({ onOpenForm }) 
           ))}
         </div>
 
-        <div className="text-center fade-up mt-16">
+        <div className="text-center fade-up mt-12 sm:mt-16">
           <button 
             onClick={onOpenForm}
-            className="text-[#00FF00] font-monument text-xl md:text-2xl hover:underline underline-offset-8 decoration-[#00FF00]/40 transition-all"
+            className="bg-[#00FF00] hover:bg-[#39FF14] text-black px-7 py-3 rounded-full font-semibold text-[15px] tracking-wide transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] shadow-[0_0_20px_rgba(0,255,0,0.3)]"
           >
-            I WANT RESULTS LIKE THIS
+            I Want Results Like This
           </button>
         </div>
       </div>

@@ -4,39 +4,41 @@ import { motion } from 'motion/react';
 const steps = [
   {
     num: "01",
-    title: "We Research Users",
-    desc: "A quick deep-dive into your users, goals, and product. We map the flows and problems to solve. No 40-page questionnaires."
+    title: "STRATEGY FIRST",
+    desc: "We don't draw pixels until we understand your business goals and exactly who we are selling to."
   },
   {
     num: "02",
-    title: "We Design The Experience",
-    desc: "We design wireframes, UI, and prototypes in stages — with clickable previews at each step so nothing surprises you."
+    title: "CONVERSION DESIGN",
+    desc: "We build a visual identity that doesn't just look pretty—it builds deep psychological trust."
   },
   {
     num: "03",
-    title: "We Hand Off And Support",
-    desc: "You get dev-ready files plus a design system, and we stay on. A product your team can build exactly as designed."
+    title: "LAUNCH & SUPPORT",
+    desc: "We deploy your high-performance machine and ensure it stays running at peak efficiency 24/7."
   }
 ];
 
 const ProcessSection: React.FC = () => {
   return (
-    <div className="pb-28 pt-6 px-6 bg-transparent relative overflow-hidden">
+    <div className="py-16 sm:py-20 md:py-24 px-6 bg-transparent relative overflow-hidden">
       {/* Subtle Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00FF00]/5 blur-[150px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-20 fade-up">
-          <div className="inline-flex items-center gap-2 text-[#00FF00] font-mono text-[12px] font-bold tracking-[0.25em] uppercase mb-4 px-3.5 py-1.5 rounded-full bg-[#00FF00]/10 border border-[#00FF00]/20">
-            <span className="w-2 h-2 rounded-full bg-[#00FF00] animate-pulse" />
-            OUR PROCESS
+        <div className="text-center mb-12 sm:mb-16 fade-up">
+          <div className="inline-flex items-center gap-2 bg-white/[0.04] border border-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-md mb-3 sm:mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00FF00] animate-pulse" />
+            <span className="text-[#00FF00] font-mono text-[12px] font-semibold tracking-[0.15em] uppercase">
+              BUILD MY WEBSITE THE RIGHT WAY
+            </span>
           </div>
-          <h2 className="font-monument text-3xl sm:text-4xl md:text-[44px] tracking-tight mb-5 text-white uppercase leading-[1.15]">
-            FROM <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#00FF00] to-white">IDEA</span> TO SHIPPED, <br className="hidden sm:inline" /> WITHOUT THE <span className="text-[#00FF00]">HEADACHE</span>
+          <h2 className="font-sans font-bold text-[24px] sm:text-[28px] md:text-[34px] lg:text-[38px] tracking-[-0.015em] mb-4 text-white leading-[1.1]">
+            A Simple, <span className="text-[#00FF00]">Proven</span> Process
           </h2>
-          <p className="text-zinc-400 text-base md:text-lg max-w-xl mx-auto font-normal leading-relaxed">
-            Great UX doesn't just look good — it makes your product the obvious choice.
+          <p className="font-sans font-normal text-[15px] sm:text-[16px] text-white/65 max-w-[560px] mx-auto leading-[1.5]">
+            No fluff. No delays. Just progress.
           </p>
         </div>
 
@@ -168,6 +170,13 @@ const ProcessSection: React.FC = () => {
               <p className="text-zinc-400 text-sm sm:text-base leading-relaxed">{step.desc}</p>
             </motion.div>
           ))}
+        </div>
+
+        {/* Footer Note */}
+        <div className="text-center mt-12 max-w-2xl mx-auto">
+          <p className="text-zinc-400 text-sm sm:text-base leading-relaxed">
+            Each step is optimized to move you from initial contact to a live, lead-generating asset in as little as 4 weeks.
+          </p>
         </div>
       </div>
     </div>
