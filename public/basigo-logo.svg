@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" fill="none" className="basigo-logo">
+  <style>
+    .text-fill { fill: #FFFFFF; }
+    .circle-bg { fill: #949494; }
+    .loop-fill { fill: #0D0F12; }
+  </style>
+  <!-- BASI Text -->
+  <text x="0" y="132" font-family="system-ui, -apple-system, 'Inter', 'Arial Black', sans-serif" font-weight="900" font-size="140" letter-spacing="-0.03em" class="text-fill">BASI</text>
+  
+  <!-- Icon Circle -->
+  <g transform="translate(420, 90)">
+    <circle cx="0" cy="0" r="82" class="circle-bg" />
+    
+    <!-- Interlocking GO Loop Emblem -->
+    <!-- Top / Outer Loop -->
+    <path d="M -15 -42 C 18 -42, 45 -18, 45 15 C 45 42, 22 62, -8 62 C -32 62, -50 45, -50 22 C -50 4, -36 -10, -22 -10 C -12 -10, -5 -3, -5 6 C -5 15, -12 22, -22 22 C -28 22, -32 26, -32 32 C -32 38, -20 44, -7 44 C 10 44, 26 30, 26 12 C 26 -8, 6 -24, -16 -24 C -32 -24, -45 -12, -49 2 L -66 -2 C -60 -24, -40 -42, -15 -42 Z" class="loop-fill" />
+    
+    <!-- Bottom / Inner Intersecting Link -->
+    <path d="M 12 42 C -18 42, -45 18, -45 -15 C -45 -42, -22 -62, 8 -62 C 32 -62, 50 -45, 50 -22 C 50 -4, 36 10, 22 10 C 12 10, 5 3, 5 -6 C 5 -15, 12 -22, 22 -22 C 28 -22, 32 -26, 32 -32 C 32 -38, 20 -44, 7 -44 C -10 -44, -26 -30, -26 -12 C -26 8, -6 24, 16 24 C 32 24, 45 12, 49 -2 L 66 2 C 60 24, 40 42, 12 42 Z" class="loop-fill" />
+  </g>
+</svg>

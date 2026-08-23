@@ -13,38 +13,38 @@ const testimonials: Testimonial[] = [
     name: "Wilson Odhiambo",
     title: "General Manager, Mahali Mzuri Safari Camp",
     quote: "Big shout out to NextRise for our new site — it's live and we love it! It perfectly captures the experience we offer here at the camp. Really happy with how it turned out.",
-    image: "https://static.wixstatic.com/media/aa5266_db50c8dd17424f4fa4585d8296ce7d85~mv2.jpg/v1/fill/w_1826,h_1726,al_c,q_90/20240510_124621_edited.jpg"
+    image: "/testimonials/wilson  odhiambi general manager mahali mzuri.jpg"
   },
   {
     name: "Newton Kimani",
     title: "Mascardi Luxury Cars",
     quote: "Honestly had a great experience through the whole process. They just got our vision immediately. The site fits our brand perfectly and we've had so many compliments since launch.",
-    image: "https://i.imgur.com/mLjGLcQ.jpeg"
+    image: "/testimonials/newton kimani mascardi luxury cars.jpeg"
   },
   {
-    name: "Daniel Kang'u",
+    name: "Anthony Chege",
     title: "General Manager, Nairobi Serena Hotel",
     quote: "We are super happy with the final result. NextRise delivered a beautifully designed website that perfectly reflects who we are. Couldn't recommend them more highly.",
-    image: "https://i.ytimg.com/vi/SSE5zENMyfw/sddefault.jpg"
+    image: "/testimonials/Anthony Chege General Manager Nairobi Serena Hotel.jfif"
   },
   {
     name: "vallarine akinyi",
     title: "VMX Fitness, The Village Market",
     quote: "By far the easiest team I've worked with. They made the whole process smooth and stress-free — and the website they delivered is sleek, clean, and exactly what we were looking for.",
-    image: "https://i.imgur.com/zVoV1g2.png"
+    image: "/testimonials/vallarine akinyi vmx fitness ,the village market.png"
   },
   {
     name: "Wawira njiru",
     title: `Wawira Njiru
 Founder & Executive Director, Food4Education (Tap2Eat)`,
     quote: "NextRise completely understood the mission behind what we do — feeding over 600,000 children daily deserves a website that tells that story with impact. They delivered exactly that. The site is clean, purposeful, and truly represents who we are. The team is genuinely talented and the work they produce shows it.We're really proud of what they built for us.",
-    image: "https://i.imgur.com/CD9IFH6.jpeg"
+    image: "/testimonials/Wawira njiru  Founder & Executive Director, Food4Education (Tap2Eat).jpeg"
   },
   {
     name: "Kaoru Kaganoi",
     title: "CEO, Peach Cars",
     quote: "NextRise completely nailed it. They got our vision straight away and built us a website that looks sharp, feels premium, and truly represents Peach Cars. The process was seamless and the results speak for themselves. Without a doubt the best web designers in the country — we're really proud of what they delivered.",
-    image: "https://d20plav1k4kerc.cloudfront.net/new_website/about/Kaoru%20Kaganoi.JPG"
+    image: "/testimonials/Kaoru Kaganoi CEO, Peach Cars.jfif"
   }
 ];
 
@@ -92,12 +92,14 @@ const TestimonialCards: React.FC<{ onOpenForm: () => void }> = ({ onOpenForm }) 
               
               <div className="flex items-center gap-3.5 mt-auto pt-2">
                 <div className="w-10 h-10 rounded-full overflow-hidden border border-white/10 group-hover:border-[#00FF00]/30 transition-colors flex-shrink-0">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name} 
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
+                  <a href={testimonial.image} target="_blank" rel="noopener" className="block w-full h-full">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.name} 
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                  </a>
                 </div>
                 <div>
                   <div className="font-sans text-[14px] sm:text-[15px] font-bold text-white tracking-tight">

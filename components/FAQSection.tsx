@@ -23,7 +23,7 @@ const FAQItem: React.FC<{ q: string; a: string }> = ({ q, a }) => {
 
 const FAQSection: React.FC = () => {
   return (
-    <div className="py-16 sm:py-20 md:py-24 bg-transparent px-6">
+    <div className="pt-4 sm:pt-6 md:pt-8 pb-16 sm:pb-20 md:pb-24 bg-transparent px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 sm:mb-16 fade-up">
           {/* Eyebrow Badge */}

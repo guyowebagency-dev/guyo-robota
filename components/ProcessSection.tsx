@@ -21,7 +21,7 @@ const steps = [
 
 const ProcessSection: React.FC = () => {
   return (
-    <div className="py-16 sm:py-20 md:py-24 px-6 bg-transparent relative overflow-hidden">
+    <div className="pt-4 sm:pt-6 md:pt-8 pb-16 sm:pb-20 md:pb-24 px-6 bg-transparent relative overflow-hidden">
       {/* Subtle Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00FF00]/5 blur-[150px] rounded-full pointer-events-none -z-10" />
 

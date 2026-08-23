@@ -17,7 +17,7 @@ const LogoMarquee: React.FC = () => {
     <section className="py-16 bg-black border-y border-white/5 overflow-hidden select-none">
       <div className="max-w-7xl mx-auto px-6 mb-8">
         <p className="text-center text-xs font-mono text-zinc-500 uppercase tracking-[0.3em]">
-          Trusted by Industry Leaders
+          Clients, Partners + Experiences
         </p>
       </div>
       
