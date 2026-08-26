@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     name: "Anthony Chege",
     title: "General Manager, Nairobi Serena Hotel",
     quote: "We are super happy with the final result. NextRise delivered a beautifully designed website that perfectly reflects who we are. Couldn't recommend them more highly.",
-    image: "/testimonials/Anthony Chege General Manager Nairobi Serena Hotel.jfif"
+    image: "/testimonials/anthony chege.jfif"
   },
   {
     name: "vallarine akinyi",
