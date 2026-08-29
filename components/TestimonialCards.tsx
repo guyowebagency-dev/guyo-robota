@@ -1,5 +1,6 @@
 
 import React from 'react';
+import LogoCarousel from './LogoCarousel';
 
 interface Testimonial {
   name: string;
@@ -121,6 +122,11 @@ const TestimonialCards: React.FC<{ onOpenForm: () => void }> = ({ onOpenForm }) 
           >
             I Want Results Like This
           </button>
+        </div>
+
+        {/* Clients, Partners + Experiences Logo Marquee */}
+        <div className="fade-up">
+          <LogoCarousel />
         </div>
       </div>
     </div>

@@ -30,23 +30,30 @@ const logos = [
 
 const LogoCarousel: React.FC = () => {
   return (
-    <div className="py-20 bg-transparent overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
-        <h2 className="font-sans font-bold text-xl md:text-2xl text-white tracking-tight">
+    <div className="pt-16 sm:pt-20 md:pt-24 pb-8 bg-transparent overflow-hidden w-full">
+      <div className="max-w-7xl mx-auto px-6 mb-8 sm:mb-10 text-center">
+        <h3 className="font-sans font-bold text-lg sm:text-xl md:text-2xl text-white tracking-tight">
           Clients, Partners + Experiences
-        </h2>
-        <div className="w-20 h-1 bg-[#00FF00] mx-auto mt-4"></div>
+        </h3>
+        <div className="w-16 sm:w-20 h-1 bg-[#00FF00] mx-auto mt-3 sm:mt-4 rounded-full"></div>
       </div>
 
-      <div className="relative flex overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap items-center">
+      <div 
+        className="relative flex overflow-hidden w-full [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+      >
+        <div className="flex animate-marquee whitespace-nowrap items-center hover:[animation-play-state:paused] py-2">
+          {/* Quadrupled list to guarantee smooth continuous loop across ultra-wide viewports */}
           {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (
-            <div key={i} className="mx-12 flex items-center justify-center min-w-[150px]">
+            <div 
+              key={i} 
+              className="mx-8 sm:mx-12 md:mx-16 flex items-center justify-center flex-shrink-0"
+            >
               <img
                 src={logo.url}
                 alt={logo.name}
-                className="h-10 md:h-14 object-contain transition-all duration-500 opacity-80 hover:opacity-100"
+                className="h-9 sm:h-11 md:h-13 max-w-[140px] sm:max-w-[170px] md:max-w-[200px] object-contain transition-opacity duration-300"
                 referrerPolicy="no-referrer"
+                loading="eager"
               />
             </div>
           ))}
@@ -57,3 +64,4 @@ const LogoCarousel: React.FC = () => {
 };
 
 export default LogoCarousel;
+

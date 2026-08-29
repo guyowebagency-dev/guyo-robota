@@ -7,7 +7,6 @@ import ProblemAwareness from '../components/ProblemAwareness';
 import SolutionSection from '../components/SolutionSection';
 import ProcessSection from '../components/ProcessSection';
 import TestimonialCards from '../components/TestimonialCards';
-import LogoCarousel from '../components/LogoCarousel';
 import ServicesSection from '../components/ServicesSection';
 import FAQSection from '../components/FAQSection';
 import FinalCTA from '../components/FinalCTA';
@@ -69,12 +68,6 @@ const HomePage: React.FC = () => {
 
         <section id="testimonials">
           <TestimonialCards onOpenForm={handleOpenForm} />
-        </section>
-
-        <SectionDivider label="trusted by" />
-
-        <section id="brands">
-          <LogoCarousel />
         </section>
         
         <SectionDivider label="our services" />
