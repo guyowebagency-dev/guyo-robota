@@ -4,27 +4,27 @@ import React from 'react';
 const logos = [
   {
     name: 'Absa',
-    url: '/assets/img/marq-01.png',
+    url: '/logos/absa.png',
   },
   {
     name: 'BasiGO',
-    url: '/assets/img/marq-02.png',
+    url: '/logos/basigo.png',
   },
   {
     name: 'Virgin Limited Edition',
-    url: '/assets/img/marq-03.png',
+    url: '/logos/virgin-limited-edition.png',
   },
   {
     name: 'Tap2Eat',
-    url: '/assets/img/marq-04.png',
+    url: '/logos/tap2eat.png',
   },
   {
     name: 'Mascardi',
-    url: '/assets/img/marq-05.png',
+    url: '/logos/mascardi.png',
   },
   {
     name: 'easycoach',
-    url: '/assets/img/marq-06.png',
+    url: '/logos/easycoach.png',
   },
 ];
 
