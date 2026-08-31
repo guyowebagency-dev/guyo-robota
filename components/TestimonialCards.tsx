@@ -14,38 +14,38 @@ const testimonials: Testimonial[] = [
     name: "Wilson Odhiambo",
     title: "General Manager, Mahali Mzuri Safari Camp",
     quote: "Big shout out to NextRise for our new site — it's live and we love it! It perfectly captures the experience we offer here at the camp. Really happy with how it turned out.",
-    image: "/testimonials/wilson  odhiambi general manager mahali mzuri.jpg"
+    image: "/testimonial-images/wilson  odhiambi general manager mahali mzuri.jpg"
   },
   {
     name: "Newton Kimani",
     title: "Mascardi Luxury Cars",
     quote: "Honestly had a great experience through the whole process. They just got our vision immediately. The site fits our brand perfectly and we've had so many compliments since launch.",
-    image: "/testimonials/newton kimani mascardi luxury cars.jpeg"
+    image: "/testimonial-images/newton kimani mascardi luxury cars.jpeg"
   },
   {
     name: "Anthony Chege",
     title: "General Manager, Nairobi Serena Hotel",
     quote: "We are super happy with the final result. NextRise delivered a beautifully designed website that perfectly reflects who we are. Couldn't recommend them more highly.",
-    image: "/testimonials/anthony chege.jfif"
+    image: "/testimonial-images/Anthony Chege General Manager Nairobi Serena Hotel.jfif"
   },
   {
     name: "vallarine akinyi",
     title: "VMX Fitness, The Village Market",
     quote: "By far the easiest team I've worked with. They made the whole process smooth and stress-free — and the website they delivered is sleek, clean, and exactly what we were looking for.",
-    image: "/testimonials/vallarine akinyi vmx fitness ,the village market.png"
+    image: "/testimonial-images/vallarine akinyi vmx fitness ,the village market.png"
   },
   {
     name: "Wawira njiru",
     title: `Wawira Njiru
 Founder & Executive Director, Food4Education (Tap2Eat)`,
     quote: "NextRise completely understood the mission behind what we do — feeding over 600,000 children daily deserves a website that tells that story with impact. They delivered exactly that. The site is clean, purposeful, and truly represents who we are. The team is genuinely talented and the work they produce shows it.We're really proud of what they built for us.",
-    image: "/testimonials/Wawira njiru  Founder & Executive Director, Food4Education (Tap2Eat).jpeg"
+    image: "/testimonial-images/Wawira njiru  Founder & Executive Director, Food4Education (Tap2Eat).jpeg"
   },
   {
     name: "Kaoru Kaganoi",
     title: "CEO, Peach Cars",
     quote: "NextRise completely nailed it. They got our vision straight away and built us a website that looks sharp, feels premium, and truly represents Peach Cars. The process was seamless and the results speak for themselves. Without a doubt the best web designers in the country — we're really proud of what they delivered.",
-    image: "/testimonials/Kaoru Kaganoi CEO, Peach Cars.jfif"
+    image: "/testimonial-images/Kaoru Kaganoi CEO, Peach Cars.jfif"
   }
 ];
 
